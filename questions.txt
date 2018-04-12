@@ -1,0 +1,55 @@
+1. LastPlayBot plays a predefined element for it's first move. After that it plays
+the move it's opponent played in the previous round. I implemented this by using
+a variable called oppLast in the Player class where the opponents move is stored
+after each round. LastPlayBot then plays whatever element is stored in oppLast
+on their next turn.
+
+2. MyBot plays a predefined element for it's first move. After that it plays the
+opponents last move if it won the round, or the same move it just played if it
+loses the round. I implemented MyBot by using the same oppLast variable that
+LastPlayBot uses along with another variable myLast to keep track MyBot's last
+move. Also, the MyBot class uses a boolean variable called wonLast to keep track
+of whether or not it ran the last round.
+
+3. Java's type system is that of a statically and weakly typed language. Java is 
+statically typed because it is type checked before runtime and will not let you 
+run the program until any type errors are fixed. The language is weakly typed 
+because types can be type cast implicitly and explicitly to be a different type. 
+For example, a variable that is a double can be set to be equal to a variable that 
+is an integer and Java will automatically convert that integer to a double. User-defined 
+types use the object oriented class structure to create your own datatype consisting 
+of one or more primitive types. Java uses both static and dynamic binding. Static 
+binding occurs at compile time and dynamic binding is at runtime. Static binding typically 
+occurs when something is private, final, and/or static. Otherwise, binding will happen 
+at runtime.
+(https://beginnersbook.com/2013/04/java-static-dynamic-binding/)
+
+
+4. I have found the stupid bot to be the easiest of all to beat as it just plays
+the same move over and over again. The random bot is the most difficult to beat
+because it is the only bot that has a truly unpredictable pattern.
+
+5. It is possible to design a Player strategy that is more likely to succeed. Pure 
+randomizationdoes a pretty good job for such a simple algorithm. However, more 
+advanced algorithms can be more successful such as history matching algorithms 
+that track the moves of the opponent and the programs own moves. These algorithms 
+will find patterns in the history of the moves to make a guess of what the next 
+move will be.
+
+6. I like Java because it is very familiar with me as it is the first language
+we learn at MSU. Therefore, I did not have to spend hours googling how to do
+things in Java like I did with the Ruby and ML.
+
+7. One thing I do not like about Java is that you cannot return multiple types.
+Therefore, you have to create a separate class to work around this attribute
+of Java consuming more time.
+
+8. I did enjoy this lab because making games is always more fun than some random
+program. The only thing I really disliked about the lab was having to use gradle
+because I had trouble getting it working and could not find good, easy to understand
+documentation on it.
+
+9. ~15
+
+10. The experience I have with Java comes only from the courses that use Java
+leading up to this class.
